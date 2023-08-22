@@ -20,7 +20,6 @@ def draw_winning_numbers():
     return winning_list
 
 def count_matching_numbers(numbers, winning_numbers):
-    # 여기에 코드를 작성하세요
     count = 0
     for num_1 in numbers :
         for num_2 in winning_numbers :
@@ -29,7 +28,6 @@ def count_matching_numbers(numbers, winning_numbers):
     return count
 
 def check(numbers, winning_numbers):
-    # 여기에 코드를 작성하세요
     bonus = winning_numbers[len(winning_numbers) - 1]
     winning_numbers.remove(bonus)
     match_count = count_matching_numbers(numbers,winning_numbers)
